@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/flexbox-grid.css?version=0.3">
   <link rel="stylesheet" href="css/pink.css?version=0.3">
+  <link rel="stylesheet" href="css/images.css/version=0.3">
 </head>
 <body>
 
@@ -43,16 +44,30 @@
       Goals in Life / Dream: My main goal is to become a game developer and eventually run my own game development studio in the future. Another dream of mine is to set up my own internet cafe as it was one of the main influences as to why I want to become a game developer.
      </p>
   </article>
+
   <div id="app">
    {{ message }}
    <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
- </div>
+  </div>
+
+  <div id="app2">
+   <div>
+     <figure v-for="x in manyFoods">
+       <img v-bind:src="x.url">
+       <figcaption>{{ x.name }}</figcaption>
+     </figure>
+   </div>
+   
+ 
+  </div>
+
 </main>
 
 
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/vue.js"></script>
+<script src="js/images.js"></script>
 
 </body>
 </html>
