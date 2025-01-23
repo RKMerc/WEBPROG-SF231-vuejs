@@ -1,31 +1,27 @@
 <template>
-    <div v-on:click="countClicks">
-      <h2>{{ name }}</h2>  
-      <p>{{ message }}</p>
-      <p id="yellow">You have clicked me {{ clicks }} times.</p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        name: 'Mango',
-        message: 'I like mangoes',
-        clicks: 0
-      }
-    },
-    methods: {
-      countClicks() {
-        this.clicks++;
-      }
+  <div  class="mango">
+    <h2>{{ name }}</h2>
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      name: 'Mangoes',
+      message: 'I like Mangoes'
     }
   }
-  </script>
-  
-  <style>
-    #yellow {
-      font-weight: bold ;
-      color: rgb(231, 217, 21);
-    }
-  </style>
+};
+</script>
+
+<style>
+  .mango {
+  border: dashed black 1px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightyellow;
+}
+</style>
