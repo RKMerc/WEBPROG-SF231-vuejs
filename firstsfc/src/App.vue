@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>Hello World!</h1>
+  <h1>Hello WEBPROG SF231!</h1>
 </template>
 
 <style>
