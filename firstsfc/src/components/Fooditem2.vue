@@ -2,7 +2,7 @@
     <div v-on:click="countClicks">
       <h2>{{ name }}</h2>  
       <p>{{ message }}</p>
-      <p id="red">You have clicked me {{ clicks }} times.</p>
+      <p id="yellow">You have clicked me {{ clicks }} times.</p>
     </div>
   </template>
   
@@ -10,8 +10,8 @@
   export default {
     data() {
       return {
-        name: 'Apples',
-        message: 'I like apples',
+        name: 'Mango',
+        message: 'I like mangoes',
         clicks: 0
       }
     },
@@ -24,8 +24,8 @@
   </script>
   
   <style>
-    #red {
+    #yellow {
       font-weight: bold ;
-      color: rgb(144, 12, 12);
+      color: rgb(231, 217, 21);
     }
   </style>
