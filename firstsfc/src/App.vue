@@ -4,7 +4,7 @@
 
   const countries = ref([])
 
-  async funciton getCountries() {
+  async function getCountries() {
     const { data } = await supabase.from('countries').select()
     countries.value = data
   }
