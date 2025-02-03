@@ -25,6 +25,11 @@
   <food-item2/> <br>
   <food-item/>  <br>
   <food-item2/> <br>
+  <!--
+  <comment-form/>
+  <comment/>
+  remove comment after initial commit
+  -->
 </template>
 
 <style></style>
