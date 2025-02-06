@@ -10,7 +10,6 @@ import Comment from './components/Comment.vue'
 
 const app = createApp(App)
 app.component('food-item', FoodItem)
-app.component('food-item2', FoodItem2)
 app.component('personal-profile', PersonalProfile)
 app.component('comment-form', CommentForm)
 app.component('comment', Comment)
