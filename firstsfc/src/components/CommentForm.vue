@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { supabase } from '..lib/supabaseClient'
+import { supabase } from '../lib/supabaseClient'
 
 
 const name = ref('');
@@ -28,7 +28,6 @@ const comment = ref('');
 const submissionStatus = ref(null);
 
 // Your Supabase URL and Key - IMPORTANT!
-
 const tableName = 'comments'; // Name of your Supabase table
 
 async function submitComment() {
