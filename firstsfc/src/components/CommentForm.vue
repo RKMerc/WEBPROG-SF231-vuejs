@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { createClient } from '@supabase/supabase-js'
+import { supabase } from '..lib/supabaseClient'
 
 
 const name = ref('');
@@ -31,8 +31,6 @@ const submissionStatus = ref(null);
 const supabaseUrl = 'https://uosbwevnnepsncuunntk.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVvc2J3ZXZubmVwc25jdXVubnRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzgyMjA5ODAsImV4cCI6MjA1Mzc5Njk4MH0.ddWd-Y1o8l6XI054HL6NgHaCaoMTmnOXHb6l77teOKI';
 const tableName = 'comments'; // Name of your Supabase table
-
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function submitComment() {
   submissionStatus.value = "Submitting...";
