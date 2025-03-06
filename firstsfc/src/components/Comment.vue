@@ -27,7 +27,7 @@ onMounted(() => {
 
 <style>
 #app > div {
-  border: solid black 1px;
+  border: dashed black 1px;
   display: flex;
   flex-direction: row;
   margin: 1rem;
