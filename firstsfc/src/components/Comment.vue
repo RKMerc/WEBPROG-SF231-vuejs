@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, defineExpose } from 'vue';
+import { ref, onMounted } from 'vue';
 import { supabase } from '../lib/supabaseClient';
 
 const comments = ref([]);
@@ -19,12 +19,7 @@ async function getComments() {
 onMounted(() => {
   getComments();
 });
-
-defineExpose({
-  getComments
-});
 </script>
-
 
 <style>
 #app > div {
