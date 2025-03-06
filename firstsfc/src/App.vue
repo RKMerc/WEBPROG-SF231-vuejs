@@ -1,9 +1,9 @@
 
 <template>
   <personal-profile/> <br>
-  <Comment ref="commentSection"/>
+  <comment ref="commentSection"/>
 
-  <CommentForm @commentSubmitted="reloadComments"/>
+  <comment-form @commentSubmitted="reloadComments"/>
 
 </template>
 
