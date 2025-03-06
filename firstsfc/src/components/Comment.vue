@@ -1,6 +1,6 @@
 <template>
+  <h1>Comments</h1>
   <div class="comment-section">
-    <h1>Comments</h1>
     <ul>
       <li v-for="comment in comments" :key="comment.id" class="comment-item">
         <strong>{{ comment.name }}:</strong> {{ comment.comment }}
