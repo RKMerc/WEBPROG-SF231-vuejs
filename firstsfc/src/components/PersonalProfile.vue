@@ -1,14 +1,6 @@
 
 <template>
-<head>
-  <title>My first Vue page</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
-  <link rel="stylesheet" href="css/pink.css?version=0.1">
-  <link rel="stylesheet" href="css/images.css?version=0.2">
-  <link rel="stylesheet" href="css/shopping.css?version=0.1">
-</head>
-<body>
+<h1>Personal Profile Web page</h1>
 
 <main class="grid-container">
   <article class="flex-container">
@@ -52,7 +44,6 @@
       My main goal is to become a game developer and eventually run my own game development studio in the future. Another dream of mine is to set up my own internet cafe as it was one of the main influences as to why I want to become a game developer.
      </p>
   </article>
-</main>
 
 <p>Some of the game genres that I have in mind are:</p>
 <ol>
@@ -62,39 +53,8 @@
  <li>Co-op</li>
  <li>Adventure</li>
 </ol>
+</main>
 </template>
     
 <script></script>
-<style>
-body {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20211025/pngtree-bottom-console-image_913604.png);
-    background-attachment: fixed;
-}
-
-article {
-    margin: 1rem 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  }
-  
-  button.hovered {
-    background-color: #45a049; /* Darker green on hover */
-      color: black;
-  }
-</style>
+<style></style>
