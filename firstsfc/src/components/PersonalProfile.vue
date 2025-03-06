@@ -75,6 +75,7 @@ main {
 
 article {
   margin: 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .grid-container {
@@ -105,8 +106,4 @@ body {
     background-attachment: fixed;
 }
 
-article {
-    margin: 1rem 0;
-    font-family: 'Courier New', Courier, monospace;
-}
 }</style>
