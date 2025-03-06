@@ -36,8 +36,17 @@ onMounted(() => {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.header-title {
+  background-color: lightsteelblue; /* Lightsteelblue background */
+  color: black; /* black text for contrast */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
 .comment-section {
-  background-color: #f0f0f0; /* Light gray background for the comment section */
+  background-color: white; /* Light gray background for the comment section */
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 5px; /* Optional: Rounded corners */
@@ -50,14 +59,4 @@ onMounted(() => {
   border-radius: 3px;
 }
 
-.header-container h1 {
-  background-color: lightsteelblue;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-}
-
-.header-container h1 {
-  margin: 0;
-}
 </style>
