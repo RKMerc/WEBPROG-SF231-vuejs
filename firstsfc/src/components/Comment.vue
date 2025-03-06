@@ -14,8 +14,14 @@
   flex-direction: row;
   margin: 1rem;
   padding: 1rem;
-  background-color: lightsteelblue;
+  background-color: #f0f0f0;
   font-family: 'Courier New', Courier, monospace;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 </style>
 
