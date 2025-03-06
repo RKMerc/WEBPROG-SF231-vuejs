@@ -5,16 +5,30 @@
   </ul>
 </template>
 
-<script></script>
+<script setup>
+import { ref, onMounted } from 'vue';
+import { supabase } from '../lib/supabaseClient';
+
+const comments = ref([]);
+
+async function getComments() {
+  const { data } = await supabase.from('comments').select();
+  comments.value = data;
+}
+
+onMounted(() => {
+  getComments();
+});
+</script>
 
 <style>
-  #app > div {
+#app > div {
   border: solid black 1px;
   display: flex;
   flex-direction: row;
   margin: 1rem;
   padding: 1rem;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* A light gray background */
   font-family: 'Courier New', Courier, monospace;
 }
 ul {
@@ -24,20 +38,3 @@ ul {
   width: 100%;
 }
 </style>
-
-<script setup>
-import { ref, onMounted } from 'vue'
-import { supabase } from '../lib/supabaseClient'
-
-const comments = ref([])
-
-async function getComments() {
-const { data } = await supabase.from('comments').select()
-comments.value = data
-}
-
-onMounted(() => {
-getComments()
-})
-
-</script>
