@@ -58,7 +58,20 @@
     
 <script></script>
 <style>
+
+h1 {
+  text-justify: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 body {
+    padding: 1rem;
     width: 100%;
     height: 100%;
     background-position: center;
@@ -68,6 +81,28 @@ body {
 }
 
 article {
-    margin: 1rem 0;
-    font-family: 'Courier New', Courier, monospace;
-}</style>
+  margin: 1rem 0;
+  font-familt: 'Courier New', Courier, monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  background-color:lightsteelblue;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.flex-container > p {
+  margin: 0.25em 1rem 1rem;
+}
+
+
+</style>
