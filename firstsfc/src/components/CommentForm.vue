@@ -19,16 +19,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { supabase } from '../lib/supabaseClient'
-
+import { ref, defineEmits } from 'vue';
+import { supabase } from '../lib/supabaseClient';
 
 const name = ref('');
 const comment = ref('');
 const submissionStatus = ref(null);
+const emit = defineEmits(['commentSubmitted']); // Define the event
 
-// Your Supabase URL and Key - IMPORTANT!
-const tableName = 'comments'; // Name of your Supabase table
+const tableName = 'comments';
 
 async function submitComment() {
   submissionStatus.value = "Submitting...";
@@ -42,8 +41,9 @@ async function submitComment() {
       submissionStatus.value = "Error submitting comment. Please try again.";
     } else {
       submissionStatus.value = "Comment submitted successfully!";
-      name.value = ''; // Clear form fields
+      name.value = '';
       comment.value = '';
+      emit('commentSubmitted'); // Emit the event
     }
   } catch (err) {
     console.error("An unexpected error occurred:", err);
