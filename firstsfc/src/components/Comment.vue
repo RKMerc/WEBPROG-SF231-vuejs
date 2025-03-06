@@ -50,4 +50,14 @@ onMounted(() => {
   border-radius: 3px;
 }
 
+.header-container {
+  background-color: lightsteelblue;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.header-container h1 {
+  margin: 0;
+}
 </style>
