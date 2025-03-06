@@ -58,4 +58,16 @@
     
 <script></script>
 <style>
-</style>
+body {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20211025/pngtree-bottom-console-image_913604.png);
+    background-attachment: fixed;
+}
+
+article {
+    margin: 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+}</style>
