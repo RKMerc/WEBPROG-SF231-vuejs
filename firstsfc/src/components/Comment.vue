@@ -1,6 +1,6 @@
 <template>
-  <h1>Comments</h1>
   <div class="comment-section">
+    <h1>Comments</h1>
     <ul>
       <li v-for="comment in comments" :key="comment.id" class="comment-item">
         <strong>{{ comment.name }}:</strong> {{ comment.comment }}
@@ -34,15 +34,6 @@ onMounted(() => {
   padding: 1rem;
   background-color: lightsteelblue;
   font-family: 'Courier New', Courier, monospace;
-}
-
-.header-title {
-  background-color: lightsteelblue; /* Lightsteelblue background */
-  color: black; /* black text for contrast */
-  padding: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  border-radius: 5px;
 }
 
 .comment-section {
