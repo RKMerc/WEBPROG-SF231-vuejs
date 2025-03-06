@@ -9,12 +9,14 @@
 
 <style>
   #app > div {
-    border: solid black 1px;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: whitesmoke;
-  }
+  border: solid black 1px;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: lightsteelblue;
+  font-family: 'Courier New', Courier, monospace;
+}
 </style>
 
 <script setup>
@@ -33,16 +35,3 @@ getComments()
 })
 
 </script>
-
-
-<style>
-#app > div {
-  border: dashedsolid black 1px;
-  display: flex;
-  flex-direction: row;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: lightsteelblue;
-  font-family: 'Courier New', Courier, monospace;
-}
-</style>
