@@ -37,11 +37,12 @@ getComments()
 
 <style>
 #app > div {
-  border: dashed black 1px;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  background-color: lightyellow;
+  border: dashedsolid black 1px;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: lightsteelblue;
   font-family: 'Courier New', Courier, monospace;
 }
 </style>
