@@ -21,20 +21,31 @@ onMounted(() => {
 });
 </script>
 
-<style>
-#app > div {
-  border: solid black 1px;
-  display: flex;
-  flex-direction: row;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #f0f0f0; /* A light gray background */
+<style scoped>
+.comments-section {
+  background-color: lightsteelblue;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
   font-family: 'Courier New', Courier, monospace;
 }
+
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  width: 100%;
+  margin: 10px 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+h1 {
+  margin-bottom: 15px;
 }
 </style>
