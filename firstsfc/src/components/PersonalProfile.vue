@@ -45,14 +45,11 @@
      </p>
   </article>
 
-<p>Some of the game genres that I have in mind are:</p>
-<ol>
- <li>Strategy</li>
- <li>RPG</li>
- <li>Puzzle</li>
- <li>Co-op</li>
- <li>Adventure</li>
-</ol>
+  <article class="flex-container">
+    <p>
+      Some of the game genres that I have in mind are: Strategy, RPG, Puzzle, Co-op, and Adventure.
+    </p>
+  </article>
 </main>
 </template>
     
