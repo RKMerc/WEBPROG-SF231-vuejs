@@ -1,4 +1,4 @@
-<!--
+
 <template>
     <div class="apple">
       <h2>{{ name }}</h2>

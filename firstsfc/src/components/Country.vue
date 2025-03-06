@@ -1,4 +1,4 @@
-<!--
+
 <template>
   <h1>Countries</h1>
   <ul>
