@@ -82,7 +82,7 @@ body {
 
 article {
   margin: 1rem 0;
-  font-familt: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .grid-container {

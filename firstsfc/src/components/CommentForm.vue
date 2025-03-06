@@ -56,6 +56,7 @@ async function submitComment() {
 /* Basic styling - Customize as needed */
 .form-group {
   margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 label {
@@ -77,5 +78,6 @@ label {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
 }
 </style>
